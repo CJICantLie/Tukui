@@ -571,11 +571,11 @@ function Stuffing:Layout(lb)
 
 	if lb then
 		bs = bags_BANK
-		cols = (floor(TukuiCF["chat"].chatwidth/370 * 10))
+		cols = (floor(TukuiCF["chat"].chatwidth/350 * 10))
 		f = self.bankFrame
 	else
 		bs = bags_BACKPACK
-		cols = (floor(TukuiCF["chat"].chatwidth/370 * 10))
+		cols = (floor(TukuiCF["chat"].chatwidth/350 * 10))
 		f = self.frame
 
 		f.gold:SetText (GetCoinTextureString(GetMoney(), 12))
@@ -1178,36 +1178,36 @@ function Stuffing:SortBags()
 	end)
 
 	-- for each button we want to sort, get a destination button
-	local st_idx = 1
+	local st_idx = #bs
 	local dbag = bs[st_idx]
-	local dslot = 1
-	local max_dslot = GetContainerNumSlots(dbag)
 
+	local dslot = GetContainerNumSlots(dbag)
+ 
 	for i, v in ipairs (st) do
 		v.dbag = dbag
 		v.dslot = dslot
 		v.dstSlot = self:SlotNew(dbag, dslot)
+ 
+		dslot = dslot - 1
+ 
+		if dslot == 0 then
 
-		dslot = dslot + 1
-
-		if dslot > max_dslot then
-			dslot = 1
 
 			while true do
-				st_idx = st_idx + 1
-
-				if st_idx > #bs then
+				st_idx = st_idx - 1
+ 
+				if st_idx < 0 then
 					break
 				end
-
+ 
 				dbag = bs[st_idx]
-
-				if Stuffing:BagType(dbag) == ST_NORMAL or Stuffing:BagType(dbag) == ST_SPECIAL or dbag > 4 then
+ 
+				if Stuffing:BagType(dbag) == ST_NORMAL or dbag < 1 then
 					break
 				end
 			end
-
-			max_dslot = GetContainerNumSlots(dbag)
+ 
+			dslot = GetContainerNumSlots(dbag)
 		end
 	end
 
@@ -1236,7 +1236,6 @@ function Stuffing:SortBags()
 		self:SetScript("OnUpdate", Stuffing.SortOnUpdate)
 	end
 end
-
 
 function Stuffing:RestackOnUpdate(e)
 	if not self.elapsed then

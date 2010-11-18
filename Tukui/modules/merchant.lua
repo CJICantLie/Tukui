@@ -24,10 +24,17 @@ f:SetScript("OnEvent", function()
 	end
 	if not IsShiftKeyDown() then
 		if CanMerchantRepair() and db.autorepair then
+			guildRepairFlag = 0
 			cost, possible = GetRepairAllCost()
+			-- additional checks for guild repairs
+			if (IsInGuild()) and (CanGuildBankRepair()) then
+				if cost <= GetGuildBankWithdrawMoney() then
+					guildRepairFlag = 1
+				end
+			end
 			if cost>0 then
-				if possible then
-					RepairAllItems()
+				if (possible or guildRepairFlag) then
+					RepairAllItems(guildRepairFlag)
 					local c = cost%100
 					local s = math.floor((cost%10000)/100)
 					local g = math.floor(cost/10000)
