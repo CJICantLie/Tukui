@@ -94,8 +94,8 @@ local function Shared(self, unit)
 	self.ReadyCheck = ReadyCheck
 	
 	local LFDRole = health:CreateTexture(nil, "OVERLAY")
-	LFDRole:SetHeight(TukuiDB.Scale(18*TukuiCF["raidframes"].scale))
-	LFDRole:SetWidth(TukuiDB.Scale(18*TukuiCF["raidframes"].scale))
+	LFDRole:SetHeight(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
+	LFDRole:SetWidth(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
 	LFDRole:SetPoint("CENTER", self, 'TOP')
 	self.LFDRole = LFDRole
 
