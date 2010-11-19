@@ -6,7 +6,7 @@ local Update = function(self, event)
 
 	local role = UnitGroupRolesAssigned(self.unit)
 
-	if(role == 'TANK' or role == 'HEALER' or role == 'DAMAGER') then
+	if(role == 'TANK' or role == 'HEALER'--[[ or role == 'DAMAGER']]) then
 		lfdrole:SetTexCoord(GetTexCoordsForRoleSmallCircle(role))
 		lfdrole:Show()
 	else
