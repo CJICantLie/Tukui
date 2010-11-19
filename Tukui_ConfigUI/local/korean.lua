@@ -150,6 +150,7 @@
 	TukuiL.option_unitframes_classbar = "직업 바를 사용"
 	TukuiL.option_unitframes_healthbackdropcolor = "생명령 바의 배경 색상"
  	TukuiL.option_unitframes_healthcolorbyvalue = "Color Healthbars by Health Remaining"
+	TukuiL.option_unitframes_combat = "Fade unitframes while not in-combat"
 	
 	-- 창 크기
 	TukuiL.option_framesizes = "개체창 크기"
@@ -215,7 +216,8 @@
 	TukuiL.option_actionbar_buttonspacing = "행동 단축버튼의 간격"
 	TukuiL.option_actionbar_petbuttonsize = "특수 기술 단축버튼의 크기"
 	TukuiL.option_actionbar_petbuttonspacing = "특수 기술 단축버튼의 간격"
- 
+	TukuiL.option_actionbar_swaptopbottombar = "Swap the top and bottom actionbar positions"
+	
 	-- 투기장
 	TukuiL.option_arena = "투기장"
 	TukuiL.option_arena_st = "상대 플레이어 주문 추적을 사용"

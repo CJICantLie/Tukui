@@ -152,6 +152,7 @@
 	TukuiL.option_unitframes_classbar = "Enable Classbar (TotemBar, RuneBar, HolyBar, SoulshardBar, EclipseBar)"
 	TukuiL.option_unitframes_healthbackdropcolor = "Backdrop color of health on all unitframes"
 	TukuiL.option_unitframes_healthcolorbyvalue = "Color Healthbars by Health Remaining"
+	TukuiL.option_unitframes_combat = "Fade unitframes while not in-combat"
 	
 	-- frame sizes
 	TukuiL.option_framesizes = "UnitFrame Sizes"
@@ -217,6 +218,7 @@
 	TukuiL.option_actionbar_buttonspacing = "Spacing of the main action buttons"
 	TukuiL.option_actionbar_petbuttonsize = "Size of the pet/stance/totem action buttons"
 	TukuiL.option_actionbar_petbuttonspacing = "Spacing of the pet/stance/totem action buttons"
+	TukuiL.option_actionbar_swaptopbottombar = "Swap the top and bottom actionbar positions"
 	
 	-- arena
 	TukuiL.option_arena = "竞技场"

@@ -150,7 +150,8 @@
 	TukuiL.option_unitframes_classbar = "Aktiviere Klassenleiste (Totemleiste, Runenleiste, Heiligleiste, Seelensplitterleiste, Finsternisleiste)"
 	TukuiL.option_unitframes_healthbackdropcolor = "Hintergrundfarbe der Gesundheitsleiste aller Einheitenfenster"
  	TukuiL.option_unitframes_healthcolorbyvalue = "Color Healthbars by Health Remaining"
-	
+	TukuiL.option_unitframes_combat = "Fade unitframes while not in-combat"
+		
 	-- frame sizes
 	TukuiL.option_framesizes = "Einheitenfenstergröße"
 	TukuiL.option_framesizes_playtarwidth = "Breite der Spieler/Ziel Einheitenfenster"
@@ -215,7 +216,8 @@
 	TukuiL.option_actionbar_buttonspacing = "Abstand der Aktionsleisten Buttons"
 	TukuiL.option_actionbar_petbuttonsize = "Größe der Begleiter/Haltungs/Totems Aktionsleisten Buttons"
 	TukuiL.option_actionbar_petbuttonspacing = "Abstand der Begleiter/Haltungs/Totems Aktionsleisten Buttons"
- 
+	TukuiL.option_actionbar_swaptopbottombar = "Swap the top and bottom actionbar positions"
+	
 	-- arena
 	TukuiL.option_arena = "Arena"
 	TukuiL.option_arena_st = "Aktiviere Tukui-Arena Gegner Abklingzeiten Anzeige"

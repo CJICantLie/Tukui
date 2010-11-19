@@ -148,7 +148,8 @@
 	TukuiL.option_unitframes_classbar = "Activar la barra de clase (Totems, Runas, poder sagrado, almas, Eclipse)"
 	TukuiL.option_unitframes_healthbackdropcolor = "Color de fondo de la barra de vida para todas las unidades"
 	TukuiL.option_unitframes_healthcolorbyvalue = "Color Healthbars by Health Remaining"
-		
+	TukuiL.option_unitframes_combat = "Fade unitframes while not in-combat"
+			
 	 -- frame sizes
 	TukuiL.option_framesizes = "Tamaño de los marcos de unidad"
 	TukuiL.option_framesizes_playtarwidth = "Width of the Player/Target frames"
@@ -213,6 +214,7 @@
 	TukuiL.option_actionbar_buttonspacing = "Espacio entre los botones de la barra principal"
 	TukuiL.option_actionbar_petbuttonsize = "Tamaño de los botones de la barra de mascota/estancia/tótems"
 	TukuiL.option_actionbar_petbuttonspacing = "Espacio entre los botones de la barra de mascota/estancia/tótems"
+	TukuiL.option_actionbar_swaptopbottombar = "Swap the top and bottom actionbar positions"
 	
 	-- arena
 	TukuiL.option_arena = "Arena"
