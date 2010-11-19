@@ -90,7 +90,7 @@ TukuiCF["auras"] = {
 }
 
 TukuiCF["castbar"] = {
-	["unitcastbar"] = true, -- enable tukui castbar
+	["unitcastbar"] = false, -- enable tukui castbar
 		["cblatency"] = true, -- enable castbar latency
 		["cbicons"] = false, -- enable icons on castbar
 		["castermode"] = false, -- makes castbar larger and puts it above the actionbar frame
