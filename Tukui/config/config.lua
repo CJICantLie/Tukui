@@ -72,6 +72,7 @@ TukuiCF["raidframes"] = {
 	["partypets"] = true,					-- enable party pets for the healer layout
 	["disableblizz"] = true,				-- fuck fuck fuckin fuck
 	["healthdeficit"] = true,			-- show the health deficit on the raidframes
+	["griddps"] = true,					-- show dps layout in grid style
 }
 
 TukuiCF["auras"] = {
@@ -197,7 +198,7 @@ TukuiCF["chat"] = {
 	["enable"] = true,                     -- blah
 		["whispersound"] = true,               -- play a sound when receiving whisper
 		["showbackdrop"] = true,				-- show a backdrop on the chat panels
-		["chatwidth"] = 350,					-- width of chat frame
+		["chatwidth"] = 348,					-- width of chat frame
 		["chatheight"] = 111,					-- height of chat frame
 		["fadeoutofuse"] = true,				-- fade chat text when out of use
 		["sticky"] = true,						-- when opening the chat edit box resort to previous channel
