@@ -93,11 +93,13 @@ local function Shared(self, unit)
 	ReadyCheck:SetPoint('CENTER', self.Health, 'CENTER', 0, -4)
 	self.ReadyCheck = ReadyCheck
 	
-	local LFDRole = health:CreateTexture(nil, "OVERLAY")
-	LFDRole:SetHeight(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
-	LFDRole:SetWidth(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
-	LFDRole:SetPoint("CENTER", self, 'TOP')
-	self.LFDRole = LFDRole
+	if TukuiCF["raidframes"].role == true then
+		local LFDRole = health:CreateTexture(nil, "OVERLAY")
+		LFDRole:SetHeight(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
+		LFDRole:SetWidth(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
+		LFDRole:SetPoint("CENTER", self, 'TOP')
+		self.LFDRole = LFDRole
+	end
 
 	if TukuiCF["unitframes"].debuffhighlight == true then
 		local dbh = health:CreateTexture(nil, "OVERLAY", health)

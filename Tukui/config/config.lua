@@ -39,9 +39,6 @@ TukuiCF["unitframes"] = {
 	["poweroffset"] = 9,					--powerbar offset
 	["classbar"] = true,                    -- enable runebar/totembar/holypowerbar/soulshardbar/eclipsebar
 	["combat"] = true,						-- only show main unitframes when in combat/havetarget/or mouseover
-
-	-- hunter only plugin
-	["mendpet"] = true,						--mend pet duration overlay on pet frame
 }
 
 TukuiCF["framesizes"] = {
@@ -73,6 +70,7 @@ TukuiCF["raidframes"] = {
 	["disableblizz"] = true,				-- fuck fuck fuckin fuck
 	["healthdeficit"] = true,			-- show the health deficit on the raidframes
 	["griddps"] = true,					-- show dps layout in grid style
+	["role"] = false,					--display role on raidframe
 }
 
 TukuiCF["auras"] = {

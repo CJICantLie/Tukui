@@ -105,6 +105,14 @@ local function Shared(self, unit)
 	self:Tag(name, "[Tukui:getnamecolor][Tukui:nameshort]")
 	self.Name = name
 	
+	if TukuiCF["raidframes"].role == true then
+		local LFDRole = health:CreateTexture(nil, "OVERLAY")
+		LFDRole:SetHeight(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
+		LFDRole:SetWidth(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
+		LFDRole:SetPoint("CENTER", self, 'TOP')
+		self.LFDRole = LFDRole
+	end
+	
     if TukuiCF["unitframes"].aggro == true then
 		table.insert(self.__elements, TukuiDB.UpdateThreat)
 		self:RegisterEvent('PLAYER_TARGET_CHANGED', TukuiDB.UpdateThreat)
@@ -126,12 +134,6 @@ local function Shared(self, unit)
 	ReadyCheck:SetWidth(TukuiCF["raidframes"].fontsize)
 	ReadyCheck:SetPoint('CENTER', self.Health, 'CENTER', 0, -4)
 	self.ReadyCheck = ReadyCheck
-	
-	local LFDRole = health:CreateTexture(nil, "OVERLAY")
-	LFDRole:SetHeight(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
-	LFDRole:SetWidth(TukuiDB.Scale(12*TukuiCF["raidframes"].scale))
-	LFDRole:SetPoint("CENTER", self, 'TOP')
-	self.LFDRole = LFDRole
 	
 	if TukuiCF["unitframes"].debuffhighlight == true then
 		local dbh = health:CreateTexture(nil, "OVERLAY", health)
