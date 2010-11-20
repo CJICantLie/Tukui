@@ -80,7 +80,7 @@ vbarbg.shadow:SetFrameLevel(bottompanel:GetFrameLevel()-1)
 
 
 --SPLIT BAR PANELS
-if TukuiCF["actionbar"].splitbar == true and TukuiCF["actionbar"].bottomrows < 3 then
+if TukuiCF["actionbar"].splitbar == true then
 
 	local splitleft = CreateFrame("Frame", "TukuiSplitActionBarLeftBackground", TukuiActionBarBackground)
 	TukuiDB.CreatePanel(splitleft, (TukuiDB.buttonsize * 3) + (TukuiDB.buttonspacing * 4), TukuiActionBarBackground:GetHeight(), "RIGHT", TukuiActionBarBackground, "LEFT", TukuiDB.Scale(-4), 0)

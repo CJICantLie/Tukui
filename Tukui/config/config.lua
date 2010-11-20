@@ -128,20 +128,20 @@ TukuiCF["arena"] = {
 
 TukuiCF["actionbar"] = {
 	["enable"] = true,                     -- enable tukz action bars
-		["hotkey"] = true,                     -- enable hotkey display because it was a lot requested
-		["rightbarmouseover"] = false,         -- enable right bars on mouse over
-		["shapeshiftmouseover"] = false,       -- enable shapeshift or totembar on mouseover
-		["hideshapeshift"] = false,            -- hide shapeshift or totembar because it was a lot requested.
-		["bottomrows"] = 3,                    -- numbers of row you want to show at the bottom (select between 1, 1.5, 2, and 3 only)
-		["rightbars"] = 2,                     -- numbers of right bar you want
-		["splitbar"] = true,					-- split the third right actionbar into two rows of 3 on the left and right side of the main actionbar
-		["showgrid"] = true,                   -- show grid on empty button
-		["bottompetbar"] = false,				-- position petbar below the actionbars instead of the right side
-		["buttonsize"] = 27,					--size of action buttons
-		["buttonspacing"] = 4,					--spacing of action buttons
-		["petbuttonsize"] = 25,					--size of pet/stance buttons
-		["petbuttonspacing"] = 4,				--spacing of pet/stance buttons
-		["swaptopbottombar"] = false,			--swap the main actionbar position with the bottom actionbar
+	["hotkey"] = true,                     -- enable hotkey display because it was a lot requested
+	["rightbarmouseover"] = false,         -- enable right bars on mouse over
+	["shapeshiftmouseover"] = false,       -- enable shapeshift or totembar on mouseover
+	["hideshapeshift"] = false,            -- hide shapeshift or totembar because it was a lot requested.
+	["bottomrows"] = 3,                    -- numbers of row you want to show at the bottom (select between 1, 1.5, 2, and 3 only)
+	["rightbars"] = 2,                     -- numbers of right bar you want
+	["splitbar"] = true,					-- split the third right actionbar into two rows of 3 on the left and right side of the main actionbar
+	["showgrid"] = true,                   -- show grid on empty button
+	["bottompetbar"] = false,				-- position petbar below the actionbars instead of the right side
+	["buttonsize"] = 27,					--size of action buttons
+	["buttonspacing"] = 4,					--spacing of action buttons
+	["petbuttonsize"] = 25,					--size of pet/stance buttons
+	["petbuttonspacing"] = 4,				--spacing of pet/stance buttons
+	["swaptopbottombar"] = false,			--swap the main actionbar position with the bottom actionbar
 }
 
 TukuiCF["nameplate"] = {
