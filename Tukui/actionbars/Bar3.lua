@@ -68,7 +68,9 @@ for i= 1, 12 do
 end
 
 -- hide it if needed
-if ((TukuiCF.actionbar.rightbars < 3 and TukuiCF["actionbar"].splitbar ~= true and TukuiCF.actionbar.bottomrows ~= 3) and not (TukuiCF["actionbar"].splitbar ~= true and TukuiCF["actionbar"].bottomrows == 2 and TukuiCF["actionbar"].rightbars == 2)) or (TukuiCF["actionbar"].bottomrows == 3 and TukuiCF["actionbar"].splitbar ~= true and TukuiCF["actionbar"].rightbars == 0) then
+if ((TukuiCF.actionbar.rightbars < 3 and TukuiCF["actionbar"].splitbar ~= true and TukuiCF.actionbar.bottomrows ~= 3) and not 
+(TukuiCF["actionbar"].splitbar ~= true and TukuiCF["actionbar"].bottomrows == 2 and TukuiCF["actionbar"].rightbars == 2)) or 
+(TukuiCF["actionbar"].bottomrows == 3 and TukuiCF["actionbar"].splitbar ~= true and TukuiCF["actionbar"].rightbars == 0) then
 	TukuiBar3:Hide()
 end
 
