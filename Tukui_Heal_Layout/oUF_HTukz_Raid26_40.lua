@@ -190,7 +190,7 @@ oUF:Factory(function(self)
 		"columnSpacing", TukuiDB.Scale(6),
 		"columnAnchorPoint", "TOP"		
 	)
-	raid:SetPoint("BOTTOM", TukuiActionBarBackground, "TOP", 0, TukuiDB.Scale(6+yOffset))	
+	raid:SetPoint("BOTTOM", TukuiActionBarBackground, "TOP", 24, TukuiDB.Scale(6+yOffset))	
 	
 	local raidToggle = CreateFrame("Frame")
 	raidToggle:RegisterEvent("PLAYER_ENTERING_WORLD")

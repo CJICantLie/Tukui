@@ -285,7 +285,7 @@ CLASS_FILTERS = {
 		},
 		player = {
 			CreateSpellEntry( 10060 ), -- Power Infusion
-			CreateSpellEntry( 588 ), -- Inner Fire
+			-- CreateSpellEntry( 588 ), -- Inner Fire
 			CreateSpellEntry( 47585 ), -- Dispersion
 			CreateSpellEntry( 81700 ), -- Archangel
 			CreateSpellEntry( 14751 ), -- Chakra
