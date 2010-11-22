@@ -25,6 +25,27 @@ end
 local TukuiSkin = CreateFrame("Frame")
 TukuiSkin:RegisterEvent("ADDON_LOADED")
 TukuiSkin:SetScript("OnEvent", function(self, event, addon)
+	if addon == "Tukui" and IsAddOnLoaded("Skinner") then
+		-- skin return to graveyard button
+		SkinButton(GhostFrame)
+		TukuiDB.SetTemplate(GhostFrameContentsFrame)
+		GhostFrame:SetNormalTexture("")
+		GhostFrame:SetHighlightTexture("")
+		GhostFrame:SetPushedTexture("")
+		GhostFrame:SetDisabledTexture("")
+		TukuiDB.SetTemplate(GhostFrame)
+		GhostFrame:HookScript("OnEnter", function(self) 	
+			self:SetBackdropColor(0,0,0,0)
+			self:SetBackdropBorderColor(0,0,0,0)
+		end)
+		GhostFrame:HookScript("OnLeave", function(self) 	
+			self:SetBackdropColor(0,0,0,0)
+			self:SetBackdropBorderColor(0,0,0,0)
+		end)
+		GhostFrame:ClearAllPoints()
+		GhostFrame:SetPoint("TOPRIGHT", UIParent, "TOPRIGHT", -11, -207)
+	end
+		
 	if IsAddOnLoaded("Skinner") or IsAddOnLoaded("Aurora") then return end
 	
 	-- stuff not in Blizzard load-on-demand
