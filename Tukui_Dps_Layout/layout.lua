@@ -54,7 +54,7 @@ local function Shared(self, unit)
 	self.colors = TukuiDB.oUF_colors
 	
 	-- Register Frames for Click
-	self:RegisterForClicks("LeftButtonDown", "RightButtonDown")
+	self:RegisterForClicks("AnyUp")
 	self:SetScript('OnEnter', UnitFrame_OnEnter)
 	self:SetScript('OnLeave', UnitFrame_OnLeave)
 	
@@ -810,6 +810,10 @@ local function Shared(self, unit)
 			self:RegisterEvent("PLAYER_TARGET_CHANGED", TukuiDB.Fader)
 			self:RegisterEvent("PLAYER_FOCUS_CHANGED", TukuiDB.Fader)
 			self:RegisterEvent("UNIT_HEALTH", TukuiDB.Fader)
+			self:RegisterEvent("UNIT_SPELLCAST_START", TukuiDB.Fader)
+			self:RegisterEvent("UNIT_SPELLCAST_STOP", TukuiDB.Fader)
+			self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_START", TukuiDB.Fader)
+			self:RegisterEvent("UNIT_SPELLCAST_CHANNEL_STOP", TukuiDB.Fader)
 			self:HookScript("OnEnter", function(self) TukuiDB.Fader(self, true) end)
 			self:HookScript("OnLeave", function(self) TukuiDB.Fader(self, false) end)
 		end
