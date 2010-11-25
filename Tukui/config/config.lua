@@ -231,7 +231,7 @@ TukuiCF["others"] = {
 	["autorepair"] = true,                 -- automaticly repair?
 	["errorenable"] = false,                     -- true to enable this mod, false to disable
 	["autoacceptinv"] = false,                 -- auto-accept invite from guildmate and friends.
-	["enablemap"] = false,                     -- reskin the map to fit tukui
+	["enablemap"] = true,                     -- reskin the map to fit tukui
 	["enablebag"] = true,                     -- enable an all in one bag mod that fit tukui perfectly
 	["spincam"] = true,						-- spin camera while afk
 }
